@@ -1,8 +1,8 @@
-import express from "express";
-import mongoose from "mongoose";
+import express from 'express';
+import mongoose from 'mongoose';
 
 mongoose
-  .connect("mongodb://localhost:27017")
+  .connect('mongodb://localhost:27017')
   .then(() => {
     const app = express();
 
@@ -12,5 +12,5 @@ mongoose
     });
   })
   .catch(() => {
-    console.log("Failed to connect to MongoDB");
+    console.log('Failed to connect to MongoDB');
   });
