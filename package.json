@@ -18,6 +18,7 @@
     "typescript-eslint": "^8.41.0"
   },
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "mongoose": "^8.18.0"
   }
 }
