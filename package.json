@@ -10,6 +10,7 @@
   "devDependencies": {
     "@eslint/js": "^9.34.0",
     "@types/express": "^5.0.3",
+    "@types/multer": "^2.0.0",
     "eslint": "9.x",
     "globals": "^16.3.0",
     "nodemon": "^3.1.10",
@@ -19,6 +20,7 @@
   },
   "dependencies": {
     "express": "^5.1.0",
-    "mongoose": "^8.18.0"
+    "mongoose": "^8.18.0",
+    "multer": "^2.0.2"
   }
 }
