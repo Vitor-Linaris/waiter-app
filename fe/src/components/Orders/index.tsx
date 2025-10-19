@@ -1,62 +1,33 @@
-import { Board, Container, OrdersContainer } from "./styles";
+import { OrdersBoard } from "../OrdersBoard";
+import { Container } from "./styles";
+
+const orders: Order[] = [
+  {
+    _id: "68cbb62f99a9b802c83c9f0a",
+    table: "3",
+    status: "WAITING",
+    products: [
+      {
+        product: {
+          name: "Coca cola",
+          imagePath: "1758178610944-coca-cola.png",
+          price: 7,
+        },
+        quantity: 1,
+        _id: "68cbb62f99a9b802c83c9f0b",
+      },
+    ],
+    createdAt: "2025-09-18T07:35:11.056Z",
+    __v: 0,
+  },
+];
 
 export function Orders() {
   return (
     <Container>
-      <Board>
-        <header>
-          <span>🕑</span>
-          <strong>Fila de espera</strong>
-          <span>(1)</span>
-        </header>
-
-        <OrdersContainer>
-          <button type="button">
-            <strong>Mesa 2</strong>
-            <span>2 itens</span>
-          </button>
-          <button type="button">
-            <strong>Mesa 2</strong>
-            <span>2 itens</span>
-          </button>
-        </OrdersContainer>
-      </Board>
-      <Board>
-        <header>
-          <span>🕑</span>
-          <strong>Fila de espera</strong>
-          <span>(1)</span>
-        </header>
-
-        <OrdersContainer>
-          <button type="button">
-            <strong>Mesa 2</strong>
-            <span>2 itens</span>
-          </button>
-          <button type="button">
-            <strong>Mesa 2</strong>
-            <span>2 itens</span>
-          </button>
-        </OrdersContainer>
-      </Board>
-      <Board>
-        <header>
-          <span>🕑</span>
-          <strong>Fila de espera</strong>
-          <span>(1)</span>
-        </header>
-
-        <OrdersContainer>
-          <button type="button">
-            <strong>Mesa 2</strong>
-            <span>2 itens</span>
-          </button>
-          <button type="button">
-            <strong>Mesa 2</strong>
-            <span>2 itens</span>
-          </button>
-        </OrdersContainer>
-      </Board>
+      <OrdersBoard icon="🕑" title="Fila de espera" orders={orders} />
+      <OrdersBoard icon="👨‍🍳" title="Em produção" orders={[]} />
+      <OrdersBoard icon="✅" title="Pronto" orders={[]} />
     </Container>
   );
 }
