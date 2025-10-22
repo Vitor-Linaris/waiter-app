@@ -1,3 +1,4 @@
+import type { Order } from "../../types/Order";
 import { OrdersBoard } from "../OrdersBoard";
 import { Container } from "./styles";
 
@@ -5,7 +6,7 @@ const orders: Order[] = [
   {
     _id: "68cbb62f99a9b802c83c9f0a",
     table: "3",
-    status: "WAITING",
+    status: "DONE",
     products: [
       {
         product: {
