@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.34.0",
+    "@types/cors": "^2.8.19",
     "@types/express": "^5.0.3",
     "@types/multer": "^2.0.0",
     "eslint": "9.x",
@@ -20,6 +21,7 @@
     "typescript-eslint": "^8.41.0"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^5.1.0",
     "mongoose": "^8.18.0",
     "multer": "^2.0.2"
